@@ -1,0 +1,13 @@
+public class DateOnly {
+    int i;
+    double d;
+    boolean b;
+
+    static DateOnly data = new DateOnly();
+
+    public  static void main(String args[]){
+        System.out.println(data.i);
+        System.out.println(data.d);
+        System.out.println(data.b);
+    }
+}
