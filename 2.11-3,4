@@ -1,3 +1,11 @@
+public class ATypeName {
+
+    public static void main(String args[]){
+        System.out.println( "ATypeName");
+    }
+
+*****************************************************************************************************************************************
+
 public class DateOnly {
     int i;
     double d;
