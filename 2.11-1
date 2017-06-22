@@ -1,0 +1,15 @@
+public class TestJavaInitial {
+    int i = 1;
+    char c ;
+     public int getI(){
+         return i;
+     }
+     public char getC(){
+         return c ;
+     }
+
+    public static void main(String args[]){
+         System.out.println(new TestJavaInitial().getI());
+         System.out.println(new TestJavaInitial().getC());
+    }
+}
