@@ -1,0 +1,12 @@
+import java.util.Date;
+
+/**
+ * String args[]为指定的参数列表，main方法的参数是一个String对象的数组，args用来存储命令行参数
+ * javac编译文件是在命令行中进行，找到对应x.java文件的文件夹下，然后用java x.java执行
+ */
+public class HelloDate {
+    public static void main(String args[]){
+        System.out.println("Hello, it's: ");
+        System.out.println(new Date());
+    }
+}
