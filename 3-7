@@ -1,0 +1,17 @@
+/**
+ * 编写一个程序，模拟扔硬币的结果。
+ *布尔类型0代表硬币正面，1代表硬币反面
+ */
+import java.util.Random;
+public class corn {
+    public static void main(String[] args){
+        Random rand = new Random();
+        boolean i = rand.nextBoolean();
+
+        if(i){
+            System.out.println("抛得的硬币为反面");
+        }else {
+            System.out.println("抛得硬币为正面");
+        }
+    }
+}
