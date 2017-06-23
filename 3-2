@@ -1,0 +1,29 @@
+/**
+ * 创建一个float域的类，用这个类来展示别名机制
+ */
+public class Float{
+    float f;
+
+public static void main(String args[]) {
+    Float f1 = new Float();
+    Float f2 = new Float();
+
+    f1.f = 1f;
+    f2.f = 2f;
+    System.out.println("f1.f: "+f1.f);
+    System.out.println("f2.f: "+f2.f);
+    System.out.println();
+
+    f1 = f2;
+    System.out.println("f1.f: "+f1.f);
+    System.out.println("f2.f: "+f2.f);
+    System.out.println();
+
+    f2.f = 3f;
+    System.out.println("f1.f: "+f1.f);
+    System.out.println("f2.f: "+f2.f);
+    System.out.println();
+
+}
+
+}
