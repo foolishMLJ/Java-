@@ -1,0 +1,20 @@
+/**
+ *创建一个包含一个float的类，用这个类来展示方法调用时的别名机制.
+ *里面的两个public都要加上，不然无法执行
+ */
+
+public class Main {
+    static void a(letter a){
+        a.f = 1f;
+    }
+    public static void main(String args[]){
+        letter x = new letter();
+        x.f = 2f;
+        System.out.println("x.f: "+x.f);
+        a(x);//x.f = 1f
+        System.out.println("x.f: "+x.f);
+    }
+}
+class letter{
+    float f;
+}
