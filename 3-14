@@ -1,0 +1,24 @@
+/*编写一个接收两个字符串参数的方法，用各种布尔值的比较关系来比较两个字符串，
+* 然后把结果打印出来。做==和！=比较的同时，用equals（）做测试，在main（）里面用几个不同的字符串对象调用这个方法。*/
+
+public class Main{
+
+    public static void compare(String A, String B ) {
+        System.out.println("A:"+A+"B: "+B);
+        System.out.println("A == B:"+ (A == B));
+        System.out.println("A != B:"+(A != B));
+        System.out.println("A.equals(B):"+A.equals(B));
+        System.out.println();
+    }
+
+    public static void main(String[] args ){
+        String str1 = "I love you!";
+        String str2 = "I love you";
+        String str3 = "I love her";
+
+        compare(str1,str2);
+        compare(str1,str3);
+        compare(str2,str3);
+
+        }
+    }
